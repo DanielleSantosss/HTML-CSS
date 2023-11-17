@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript.</p> <!--Comando para mostrar o código fonte-->
+    <pre> <!--adicionando o pre faz com que o código fique da forma certa.-->
+         <code> <!--apenas com o code faz com que não seja impresso com identação da forma correta.-->
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print: ('O número {num} é par!')
+    else:
+        print: ('O número {num} é impar!')
+    print: 'Fim do programa.'
+        </code> <!--apertando shift+tab faz com que o código "ande" para trás, apenas apertando 'tab' faz com que o código ande para frente.-->
+    </pre>
+
+    <h2>Citações</h2>
+     <!--Com a tag <q> podemos fazer citaçoes de qualquer fonte-->
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p> <!--podemos colocar aspas manual, mas dessa forma faz com que fique semântico-->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Maurício Samy Silva, no seu livro Fundamentos HTML5 e CSS3:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1">
+        Os layouts podem ser classificados segundo dois critérios. Critério do número de colunas e Critério de largura de página.
+    </blockquote> <!--A tag <blockquote cite=""> serve para dar uma citação mais detalhada ao texto e a manda para linha de baixo. O parâmetro "cite", dentro das aspas, serve para citarmos algo.-->
+
+    <h2>Abreviações</h2>
+    <p>Estou aprendendo <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>. Estou adorando!</p>
+    <!--a tag abbr faz com que possamos colocar o nome completo de algo que queremos abreviar.-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a usar HTML5.</bdo></p>
+    <!--A diretiva bdo serve para inverter as palavras em uma frase ou parágrafo.-->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png"> <!--source media type-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png"> <!--é bom colocar 50px a mais para evitar barra de rolagem lateral e vertical-->
+        <img src="imagens/foto-grande.png" alt="Imagem Flexível"> <!--a base é a imagem que queremos carregar, precisa ser feito na ordem certa (pequena, média e grande.)-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendendo a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/gridlock- john-patitucci.mp3" controls></audio> <- essa é uma forma simples de fazer, mas não muito recomendada.-->
+    <!--Existem 3 tipos de áudios, o MP3, WAV E OGG. Nem sempre um vai funcionar no navegador, então é bom ter em mãos os três.-->
+    <audio preload="metadata" controls> <!--sempre usar o metadata!-->
+        <source src="midia/gridlock-john-patitucci.mp3" type="audio/mpeg"> <!--adicionar vários formatos faz com que tenhamos mais compatilidade para vários navegadores.-->
+        <source src="midia/gridlock-john-patitucci.ogg" type="audio/ogg"> <!--formato ogg-->
+        <source src="midia/gridlock-john-patitucci.wav" type="audio/wav"> <!--formato wav, é sempre bom evitar porque são arquivos extremamente pesados.-->
+        <p>Seu navegador não suporta áudios neste formato!</p>
+    </audio>
+</body>
+</html>
